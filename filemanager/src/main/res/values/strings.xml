@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 禁止重写 -->
+    <string name="file_sharedElement_pic">file_jump_pic</string>
+    <!-- 禁止重写 -->
+    <string name="file_sharedElement_video">file_jump_Video</string>
+
+    <!--   下面重写即可自定义   -->
+    <string name="file_title">文件管理</string>
+    <string name="file_menu_down">完成</string>
+    <string name="file_menu_order">排序方式</string>
+    <string name="zifle_menu_hidden">不显示隐藏文件</string>
+    <string name="file_menu_show">显示隐藏文件</string>
+    <string name="file_sort_title">排序方式</string>
+    <string name="file_sort_default">&#160;默认（无顺序）</string>
+    <string name="file_sort_by_name">&#160;名称</string>
+    <string name="file_sort_by_time">&#160;时间</string>
+    <string name="file_sort_by_size">&#160;大小</string>
+    <string name="file_sort_ss">顺序</string>
+    <string name="file_sort_sx">&#160;升序</string>
+    <string name="file_sort_jx">&#160;降序</string>
+    <string name="file_down">确定</string>
+    <string name="file_cancel">取消</string>
+    <string name="file_info_title">文件详情</string>
+    <string name="file_info_name">文件名称：</string>
+    <string name="file_info_type">文件类型：</string>
+    <string name="file_info_size">文件大小：</string>
+    <string name="file_info_time">修改时间：</string>
+    <string name="file_info_path">文件路径：</string>
+    <string name="file_info_more">显示更多</string>
+    <string name="file_info_duration">媒体时长：</string>
+    <string name="file_info_loadding">获取中</string>
+    <string name="file_info_wh">宽高比率：</string>
+    <string name="file_info_other">其他信息：</string>
+    <string name="file_select_folder">请选择文件夹</string>
+    <string name="file_info_rename">请输入文件名称</string>
+    <string name="file_folder_name">文件夹名称</string>
+    <string name="file_rename_title">文件重命名</string>
+    <string name="file_pic">图片</string>
+    <string name="file_video">视频</string>
+    <string name="file_txt">文档</string>
+    <string name="file_other">其他</string>
+    <string name="file_loading">请稍后</string>
+    <string name="file_qw_loading" tools:ignore="TypographyEllipsis">文件获取中...</string>
+    <string name="file_duplicate">副本_</string>
+    <string name="file_permission_bad">权限申请失败</string>
+    <string name="file_11_title">温馨提示</string>
+    <string name="file_11_content">访问文件需要您同意“允许访问所有文件权限”才能正常使用！</string>
+    <string name="file_11_bad">同意“允许访问所有文件权限”才能正常使用！</string>
+
+
+</resources>

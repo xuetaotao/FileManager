@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/file_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?selectableItemBackground"
+        android:gravity="center|start"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/file_default_divider_padding"
+        android:paddingEnd="@dimen/file_default_divider_padding">
+
+        <ImageView
+            android:id="@+id/item_file_list_folderPic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_file_folder" />
+
+        <!--ellipsize:设置当文字过长时,该控件该如何显示；"end" ——省略号显示在结尾       -->
+        <TextView
+            android:id="@+id/item_file_list_folderNameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/file_default_divider_padding"
+            android:ellipsize="end"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:text="@string/file_folder_name"
+            android:textColor="@color/file_black"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/file_default_divider_padding">
+
+            <!--tools:ignore 属性是告诉Lint忽略xml中的某些警告            -->
+            <TextView
+                android:id="@+id/item_file_list_folderCountTxt"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center|end"
+                android:background="@drawable/file_count"
+                android:gravity="center"
+                android:text="99"
+                android:textColor="@color/file_white"
+                android:textSize="11sp"
+                android:visibility="gone"
+                tools:ignore="SmallSp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/file_default_divider_padding"
+        android:layout_marginEnd="@dimen/file_default_divider_padding"
+        android:background="@color/file_line_color" />
+
+</FrameLayout>

@@ -39,3 +39,7 @@
 * 2、Google 提示当使用MANAGE_EXTERNAL_STORAGE 申请权限时，并且targetSdkVersion>=30，此种情况下App被禁止上架Google Play的，
   限制时间最早到2021年。因此，在此时间之前若是申请了MANAGE_EXTERNAL_STORAGE权限，最好不要升级targetSdkVersion到30以上。
 * 3.因为申请所有文件访问权限，这种权限极度敏感，所以强如微信，WPS之类APP暂时也没有选择适配到Android 11(targetSdk = 30)
+
+### 参考学习：
+
+* https://github.com/zippo88888888/ZFileManager

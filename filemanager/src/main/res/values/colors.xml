@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 可重写该属性达到主题颜色自定义 -->
+    <color name="file_base_color">#03A9F4</color>
+    <color name="file_black">#000000</color>
+    <color name="file_gray">#666666</color>
+    <color name="file_white">#ffffff</color>
+    <color name="file_green">#2c832e</color>
+    <color name="file_red">#e01d07</color>
+    <color name="file_bbbbb9">#bbbbb9</color>
+    <color name="file_line_color">#f2f2f2</color>
+    <color name="file_bgclor">#f2f2f2</color>
+</resources>

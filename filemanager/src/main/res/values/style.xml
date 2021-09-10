@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="File_BaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/file_base_color</item>
+        <item name="colorPrimaryDark">@color/file_base_color</item>
+        <item name="colorPrimary">@color/file_base_color</item>
+        <item name="android:windowBackground">@color/file_bgclor</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="File_ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/file_white</item>
+        <item name="android:textColorPrimary">@color/file_white</item>
+    </style>
+
+    <style name="File_ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Light">
+        <item name="actionOverflowMenuStyle">@style/File_OverflowMenuStyle</item>
+    </style>
+
+    <style name="File_OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+    </style>
+
+    <style name="File_ToolbarTitleTextStyle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/file_white</item>
+    </style>
+
+
+</resources>
