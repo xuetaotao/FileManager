@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:background="@color/file_white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?selectableItemBackground"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/item_file_list_file_pic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_file_other"
+            android:transitionName="jump_File" />
+
+        <FrameLayout
+            android:id="@+id/item_file_list_file_boxLayout"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true">
+
+            <ImageView
+                android:id="@+id/item_file_file_box_pic"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_file_quan"
+                android:visibility="visible" />
+
+            <!-- 一组RadioButton，只能同时选中一个；单个RadioButton在选中后，通过点击无法变为未选中-->
+            <!-- 一组CheckBox，能同时选中多个；单个CheckBox在选中后，通过点击可以变为未选中 -->
+            <CheckBox
+                android:id="@+id/item_file_list_file_box1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:checked="false"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/item_file_list_file_box2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/file_checkbox_seletor"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_toStartOf="@+id/item_file_list_file_boxLayout"
+            android:layout_toEndOf="@+id/item_file_list_file_pic"
+            android:gravity="center|start"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_file_list_file_nameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/file_info_name"
+                android:textColor="@color/file_black"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|start"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_file_list_file_dateTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2018-07-03 16:12:30"
+                    android:textColor="@color/file_bbbbb9"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/item_file_list_file_sizeTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="10Kb"
+                    android:textColor="@color/file_bbbbb9"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/item_file_list_file_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/file_default_divider_padding"
+        android:layout_marginEnd="@dimen/file_default_divider_padding" />
+
+</FrameLayout>

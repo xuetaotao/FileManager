@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--选项菜单    -->
+    <!--item元素用于定义菜单项，item元素又可包含menu元素，位于item元素内部的menu元素就代表了子菜单    -->
+    <!--showAsAction：该方法设置是否将该菜单项显示在ActionBar上，作为ActionItem：
+    always(总是将该MenuItem显示在ActionBar上)
+    withText(将该MenuItem显示在ActionBar上，并显示该菜单项的文本)
+    collapseActionView(将该Action View折叠成普通菜单项)
+    ifRoom(当ActionBar位置足够时才显示MenuItem)
+    never(不将该MenuItem显示在ActionBar上)-->
+    <item
+        android:id="@+id/menu_file_down"
+        android:title="@string/file_menu_down"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_file_px"
+        android:title="@string/file_menu_order"
+        app:showAsAction="never" />
+
+    <!--<group>是<item>元素的不可见容器（可选）。可以使用它对菜单项进行分组，
+    使一组菜单项共享可用性和可见性等属性。    -->
+    <!-- android:checkableBehavior：为组内项目实现单选或多选的选择模式。有三种可选值   -->
+    <!-- none:所有项目均无法选中，默认值;   -->
+    <!-- single:组中只有一个项目可以选中（单选按钮）   -->
+    <!-- all:所有项目均可选中（复选框）   -->
+    <group
+        android:checkableBehavior="single"
+        app:showAsAction="never">
+
+        <item
+            android:id="@+id/menu_file_hidden"
+            android:checked="true"
+            android:title="@string/file_menu_hidden" />
+
+        <item
+            android:id="@+id/menu_file_show"
+            android:title="@string/file_menu_show" />
+
+    </group>
+
+</menu>

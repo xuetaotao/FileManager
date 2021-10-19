@@ -9,7 +9,7 @@
     <string name="file_title">文件管理</string>
     <string name="file_menu_down">完成</string>
     <string name="file_menu_order">排序方式</string>
-    <string name="zifle_menu_hidden">不显示隐藏文件</string>
+    <string name="file_menu_hidden">不显示隐藏文件</string>
     <string name="file_menu_show">显示隐藏文件</string>
     <string name="file_sort_title">排序方式</string>
     <string name="file_sort_default">&#160;默认（无顺序）</string>
